@@ -3,12 +3,6 @@ layout: post
 title: Installing and configuring Samba
 ---
 
-Title:     Installing and configuring Samba
-Slug:      installing-samba
-Date:      2012-09-10 21:17
-Tags:    
-Status:    draft
-
 Installing and configuring Samba
 ================================
 

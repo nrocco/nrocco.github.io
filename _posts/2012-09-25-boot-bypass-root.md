@@ -3,11 +3,6 @@ layout: post
 title: Boot and bypass root for vm
 ---
 
-Title:    Boot and bypass root for vm
-Date:     2012-09-25 09:01
-Slug:     boot-bypass-root
-Tags:     linux, unix
-
 A usefull tip to reset a root password for a virtual machine in case you've lost it
 <!-- more -->
 ## Log in to a unix system with a lost root account

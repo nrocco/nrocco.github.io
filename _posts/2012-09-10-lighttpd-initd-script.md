@@ -3,12 +3,6 @@ layout: post
 title: Lighttpd init.d script
 ---
 
-Title:     Lighttpd init.d script
-Slug:      lighttpd-initd-script
-Date:      2012-09-10 21:18
-Tags:
-Status:    draft
-
     #!/bin/sh
     ### BEGIN INIT INFO
     # Provides:          lighttpd

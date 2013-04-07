@@ -1,12 +1,8 @@
 ---
 layout: post
 title: A Arch Linux install guide
+draft: true
 ---
-
-Title:    A Arch Linux install guide
-Slug:     arch-linux-install-guide
-Status:   draft
-Tags:     linux, ssh, bash, arch, unix
 
 # Update the system with newest packages
 

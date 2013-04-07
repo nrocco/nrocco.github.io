@@ -3,17 +3,12 @@ layout: post
 title: CakePHP on your $PATH
 ---
 
-Title:          CakePHP on your $PATH
-Slug:           cakephp-your-path
-Date:           2011-03-14 21:10:09
-Tags:           php, development, framework, cakephp
-
 I love baking a new project with the cake bake application from the terminal, especially with the new 2.0.0-dev version. 
 
 Since I work on multiple CakePHP projects simultaneously I am also in favor of one shared CakePHP core.
 
 To make baking easier we will create an alias in *~/.bash_profile* for our cake bake application so it saves us a lot of typing.
-<!--more-->
+
 When starting with an empty *webroot* directory, **bake** automatically does a few things for me:
 
 - Copies a fresh app-skeleton to my webroot

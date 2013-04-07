@@ -3,59 +3,71 @@ layout: post
 title: CakePHP 2.0.0-dev and Auth
 ---
 
-Title:          CakePHP 2.0.0-dev and Auth
-Slug:           cakephp2-dev-and-auth
-Date:           2011-03-15 20:51:10
+Learn how to set up a authentication system in CakePHP 2.0.0-dev.  We are
+going to use some basic validation for our models and set up the views.
 
-Learn how to set up a authentication system in CakePHP 2.0.0-dev.
-We are going to use some basic validation for our models and set up the views.
+See how the newest version of Cake makes your life easier when it comes to
+authentication.
 
-See how the newest version of Cake makes your life easier when it comes to authentication.
-<!--more-->
-I spend a lot of time trying to figure out the right way to set up a simple authentication system with CakePHP. A lot of documentation out there focusses on old versions of Cake (mainly 1.2).
+I spend a lot of time trying to figure out the right way to set up a simple
+authentication system with CakePHP. A lot of documentation out there focusses
+on old versions of Cake (mainly 1.2).
 
-Since there are a few positive changes coming to version 2.0.0 that will make authenticating users a lot more easier. I will focus on the differences between older versions of CakePHP and the current 2.0.0-dev version.
+Since there are a few positive changes coming to version 2.0.0 that will make
+authenticating users a lot more easier. I will focus on the differences
+between older versions of CakePHP and the current 2.0.0-dev version.
 
 
 ###Assumptions
-- You have a local web server and http://localhost/ points to a directory on your hard drive, say *~/www*.
-- You located the CakePHP core directory outside your web server' www directory for safety.
+- You have a local web server and http://localhost/ points to a directory on
+  your hard drive, say *~/www*.
+- You located the CakePHP core directory outside your web server' www
+  directory for safety.
 - We are going to create a new project directly in the root of your localhost.
 
 
 ###Baking a Cake
-Read my previous tutorial on how to set up a fresh CakePHP application the 2.0.0-dev way ([link id='153']).
+
+Read my previous tutorial on how to set up a fresh CakePHP application the
+2.0.0-dev way (<!-- TODO: insert link here -->).
 
 Bake a new project:
 
-	$ cd ~/www
-	$ cake bake project ./
+    $ cd ~/www
+    $ cake bake project ./
 
 Just hit enter a few times to accept all default values.
 
 Now create the following users table in your database.
 
-	CREATE TABLE `users` (
-		`id` int(11) NOT NULL AUTO_INCREMENT,
-		`created` datetime NOT NULL,
-		`modified` datetime NOT NULL,
-		`name` varchar(100) NOT NULL,
-		`email` varchar(200) NOT NULL,
-		`password` varchar(42) NOT NULL,
-		PRIMARY KEY (`id`),
-		UNIQUE KEY `email` (`email`)
-	)
+    CREATE TABLE `users` (
+            `id` int(11) NOT NULL AUTO_INCREMENT,
+            `created` datetime NOT NULL,
+            `modified` datetime NOT NULL,
+            `name` varchar(100) NOT NULL,
+            `email` varchar(200) NOT NULL,
+            `password` varchar(42) NOT NULL,
+            PRIMARY KEY (`id`),
+            UNIQUE KEY `email` (`email`)
+    )
 
-I made the email column unique. In this example we will log people in with an email/password combination instead of a username.
+I made the email column unique. In this example we will log people in with an
+email/password combination instead of a username.
 
-Back to the terminal. Now with the cake console app we will create a database configuration. Type the following command in your project root.
+Back to the terminal. Now with the cake console app we will create a database
+configuration. Type the following command in your project root.
 
-	$ cake bake
+    $ cake bake
 
-The console app recognizes that there isn't a database configuration present for this project so you will have to create one now. There are lots of tutorials out there on how to do this. Usually it involves hitting *[enter]* a few times and filling in your username, password and database name.
+The console app recognizes that there isn't a database configuration present
+for this project so you will have to create one now. There are lots of
+tutorials out there on how to do this. Usually it involves hitting `<enter>` a
+few times and filling in your username, password and database name.
 
-Next we are going to set up an authentication system. The users controller will handle user specific tasks like 'register' and 'forgot password' or 'delete my account'.
-The sessions controller will handle session specific tasks like logging in (create a session) and logging out (destroy a session).
+Next we are going to set up an authentication system. The users controller
+will handle user specific tasks like 'register' and 'forgot password' or
+'delete my account'.  The sessions controller will handle session specific
+tasks like logging in (create a session) and logging out (destroy a session).
 
 Now type the following:
 
@@ -63,9 +75,10 @@ Now type the following:
 	$ cake bake controller users
 	$ cake bake controller sessions
 
-The first line creates a models/user.php file that has our User model.
-The next two commands create the files controllers/users\_controller.php and controllers/sessions\_controller.php.
-I am not baking views for these controllers since we do not need the default views.
+The first line creates a models/user.php file that has our User model.  The
+next two commands create the files controllers/users\_controller.php and
+controllers/sessions\_controller.php.  I am not baking views for these
+controllers since we do not need the default views.
 
 ###Setting up the model
 
@@ -129,12 +142,17 @@ I am not baking views for these controllers since we do not need the default vie
 	}
 	?>
 
-That's it. A simple User model with basic validation. We created a virtual password\_confirm field with a custom validation rule that is defined in the comparePasswords() method. Now, in the sign-up view we can add an extra input field called password\_confirm and when the user submits the sign up form all the validation is handled by the User model.
-This way we avoid doing any validation in the controller.
+That's it. A simple User model with basic validation. We created a virtual
+password\_confirm field with a custom validation rule that is defined in the
+comparePasswords() method. Now, in the sign-up view we can add an extra input
+field called password\_confirm and when the user submits the sign up form all
+the validation is handled by the User model.  This way we avoid doing any
+validation in the controller.
 
 ###Setting up the controllers
-Lets add some functionality to all our controllers.
-We start with the AppController to set up the Auth component.
+
+Lets add some functionality to all our controllers.  We start with the
+AppController to set up the Auth component.
 
 	//
 	// app_controller.php
@@ -297,10 +315,13 @@ Currently the User controller only handles signing up a new user.
 
 ###Setting up the views
 
-First the signup.ctp view so new users can register.
-This view renders a sign up form with the help of CakePHP Form Helper. As you can see here, I wrote the different error messages for each field here in the view and pass them to php's *__(string);* function so that localization is possible.
+First the signup.ctp view so new users can register.  This view renders a sign
+up form with the help of CakePHP Form Helper. As you can see here, I wrote the
+different error messages for each field here in the view and pass them to
+php's `__(string);` function so that localization is possible.
 
-Every key you see in the *'error'* array corresponds with the keys we used for the validators we set in the User model.
+Every key you see in the *'error'* array corresponds with the keys we used for
+the validators we set in the User model.
 
 	<?php
 	//

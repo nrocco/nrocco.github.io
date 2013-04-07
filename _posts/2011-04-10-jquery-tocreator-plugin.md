@@ -3,11 +3,6 @@ layout: post
 title: JQuery Tocreator Plugin
 ---
 
-Title:          JQuery Tocreator Plugin
-Slug:           jquery-tocreator-plugin
-Date:           2011-04-10 12:19:49
-Tags:           javascript, jquery, plugin
-
 **Minified version less then 1 kb!**
 
 - *[Plugin homepage][plugin_homepage]*
@@ -18,13 +13,16 @@ Tags:           javascript, jquery, plugin
 
 - - - 
 
-jquery-tocreator is a simple jquery plugin allowing you to create a table of contents on the fly based on a given css style selector.
-<!--more-->
+jquery-tocreator is a simple jquery plugin allowing you to create a table of
+contents on the fly based on a given css style selector.
+
 ### How It Works
 
-Take, for example, a blog post that is wrapped inside an `<article>` tag. The blog posts consists of a lot of text and has a few `<h3>` tags.
+Take, for example, a blog post that is wrapped inside an `<article>` tag. The
+blog posts consists of a lot of text and has a few `<h3>` tags.
 	
-This plugin automatically assigns an id (based on the text of the heading) to all the `<h3>` elements it finds inside the `<article>` tag.
+This plugin automatically assigns an id (based on the text of the heading) to
+all the `<h3>` elements it finds inside the `<article>` tag.
 	
 	<h3>This is a heading</h3>
 
@@ -32,7 +30,9 @@ becomes
 
 	<h3 id="this_is_a_heading">This is a heading</h3>
 
-then a block level element is created (`<ul>` by default but you can override this) and inserted in the DOM. This unordered list contains anchor style links to the headings in the articles, formatted like this:
+then a block level element is created (`<ul>` by default but you can override
+this) and inserted in the DOM. This unordered list contains anchor style links
+to the headings in the articles, formatted like this:
 
 	<li><a href="#this_is_a_heading">This is a heading</a></li>
 
@@ -99,5 +99,5 @@ The plugin has a few configuration options.
 	> For example `li`, `span`, `strong`, `em`
 
 
-[plugin_homepage]:	http://casadirocco.nl/2011/04/10/jquery-tocreator-plugin/
-[plugin_example]:	http://content.casadirocco.nl/projects/jquery-tocreator/example.html
+[plugin_homepage]: http://casadirocco.nl/2011/04/10/jquery-tocreator-plugin/
+[plugin_example]: http://content.casadirocco.nl/projects/jquery-tocreator/example.html

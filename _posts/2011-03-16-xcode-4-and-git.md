@@ -3,13 +3,8 @@ layout: post
 title: Xcode 4 and git
 ---
 
-Title:          Xcode 4 and git
-Slug:           xcode-4-and-git
-Date:           2011-03-16 20:49:44
-Tags:           git, xcode, ios, ipad, iphone, development
-
 I downloaded and installed the new Xcode yesterday to work out some ideas I had and I found that it ships by default with git integration.
-<!--more -->
+
 Click [here][gestures_ipad] to find out how to enable multitask gestures for your iPad.
 
 Turns out that after the installation process the package takes up about 10 gig on your hard drive but it includes all the earlier iOS version packages as well.

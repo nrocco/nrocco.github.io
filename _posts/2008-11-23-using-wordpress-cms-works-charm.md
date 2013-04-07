@@ -25,7 +25,9 @@ These articles on the web helped me during my development:
 - [So you want to create wordpress themes huh][wpdesigner] Describes basic knowledge on how to set up a custom made theme. How you let WP know that a certain .php file is a template etc.
 - [Wordpress Codex Main Page][codex_main] Use the function reference to see what tools you have available for outputting WP content in your WP template.
 
-### Plugins I used
+
+Plugins I used
+--------------
 
 - [Admin Management Extended Plugin][schloebe] Gives you a little more control in the WordPress admin environment, like ajax style dragging and dropping Pages to create a new order.
 - [WP Extra Template Tags][tpl_tags] Gives you a few more simple php functions to play with in your templates.

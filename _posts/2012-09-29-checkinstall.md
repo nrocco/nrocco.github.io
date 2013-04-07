@@ -3,11 +3,6 @@ layout: post
 title: A checkinstall howto
 ---
 
-Title:     A checkinstall howto
-Slug:      checkinstall
-Date:      2012-09-29 01:09
-Tags:      linux, debian, compile, source, package, management
-
 This howto explains how you can compile a package from source and install it
 using your package manager so you can easily uninstall your package later 
 (without leaving too many scattered files around.

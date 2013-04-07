@@ -3,15 +3,9 @@ layout: post
 title: A script to mount a share inside VirtualBox
 ---
 
-Title:      A script to mount a share inside VirtualBox
-Slug:       mount-share-in-virtualbox-script
-Date:       2012-12-12 06:05
-Tags:       unix, virtual, vm, guest, host
-
 This is a simple script to ease the process of mounting and unmounting
 a Virtual Box share
 
-<!-- more -->
 
     #!/bin/bash
     #===================================================================

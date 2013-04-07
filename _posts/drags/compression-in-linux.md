@@ -1,12 +1,8 @@
 ---
 layout: post
 title: Compression in Linux
+draft: true
 ---
-
-Title:    Compression in Linux
-Slug:     compression-in-linux
-Status:   draft
-Tags:     unix, linux, zip, tag, gz
 
 # Gzip archives
 

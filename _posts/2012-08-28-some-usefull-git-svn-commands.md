@@ -3,13 +3,9 @@ layout: post
 title: Some usefull git-svn commands
 ---
 
-Title:    Some usefull git-svn commands
-Slug:     some-usefull-git-svn-commands
-Date:     2012-08-28 18:34:00
-Tags:     git, svn git-svn, version, control, vcs, distributed
+Here are some useful git-svn commands that I found really usefull when working
+in a SVN oriented environment.
 
-Here are some useful git-svn commands that I found really usefull when working in a SVN oriented environment.
-<!-- more -->
 ## Start a new project with /trunk /branches /tags
 
     mkdir /srv/www/projectname
@@ -46,7 +42,8 @@ Here are some useful git-svn commands that I found really usefull when working i
 
 ## Get changes from Subversion server
 
-I advise you to run the following often. This way you will stay up to date with changes from the central subversion repository.
+I advise you to run the following often. This way you will stay up to date
+with changes from the central subversion repository.
 
     # Stash everything that you do not want to commit to svn so you have a clean working directory
     git stash
