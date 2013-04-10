@@ -8,6 +8,8 @@ Slug:           php-lint-syntax-checker-vim-plugin
 Date:           2012-05-04 23:21:06
 Tags:           vim, development, bash, shell, ide, php
 
+<!-- more -->
+
 I recently worked on a vim plugin that allows me to check the current PHP file
 I am editing for syntax errors.  If no errors are found it will print a status
 message on the screen. Otherwise, the vim quickfix window will popup allowing

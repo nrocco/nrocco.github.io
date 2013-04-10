@@ -6,6 +6,8 @@ title: CakePHP 2.0.0-dev and Auth
 Learn how to set up a authentication system in CakePHP 2.0.0-dev.  We are
 going to use some basic validation for our models and set up the views.
 
+<!-- more -->
+
 See how the newest version of Cake makes your life easier when it comes to
 authentication.
 

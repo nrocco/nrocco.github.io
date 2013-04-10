@@ -3,15 +3,12 @@ layout: post
 title: Setup apache-mpm-itk for Symfony 2 development
 ---
 
-Title:    Setup apache-mpm-itk for Symfony 2 development
-Slug:     setup-mpm-itk
-Date:     2012-08-01 11:00:00
-Tags:     bash, apache, webserver, symfony2, php, development
-
 When developing on Symfony 2 applications you must have noticed that using the
 cli `app/console` application messes up the file permissions of the cache and
 logs folder. Especially when your apache webserver is running as e.g.
 `www-data` (which is often the case and it is good practice too). 
+
+<!-- more -->
 
 By using apache-mpm-itk you can tell apache to serve/create files as if it was
 running as that user.  The apache daemon process is still owned by and running

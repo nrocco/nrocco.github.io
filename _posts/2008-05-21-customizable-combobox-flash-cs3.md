@@ -3,9 +3,14 @@ layout: post
 title: Customizable ComboBox (Flash CS3)
 ---
 
-Here is an example of how to customize the font (size, style, color) for the [List][list] and [TextField][textfield] components inside a [ComboBox][combobox]:
+Here is an example of how to customize the font (size, style, color) for the
+[List][list] and [TextField][textfield] components inside a
+[ComboBox][combobox]:
 
-First you have to create a [TextFormat][textformat] object where you can specify font, size and color parameters.
+<!-- more -->
+
+First you have to create a [TextFormat][textformat] object where you can
+specify font, size and color parameters.
 
     var myTextFormat:TextFormat = new TextFormat();
     myTextFormat.font = "Comic Sans MS";

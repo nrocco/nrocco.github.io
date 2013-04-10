@@ -6,6 +6,8 @@ title: Some usefull git-svn commands
 Here are some useful git-svn commands that I found really usefull when working
 in a SVN oriented environment.
 
+<!-- more -->
+
 ## Start a new project with /trunk /branches /tags
 
     mkdir /srv/www/projectname

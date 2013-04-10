@@ -3,9 +3,16 @@ layout: post
 title: A page filling slideshow html and javascript only
 ---
 
-A while ago I started working on a idea to create a html only website with window filling photos on the background that change just like a slideshow does. Just like the kind of [sites you usually see][example] that are made in Flash or Flex.
+A while ago I started working on a idea to create a html only website with
+window filling photos on the background that change just like a slideshow
+does. Just like the kind of [sites you usually see][example] that are made in
+Flash or Flex.
 
-I looked around for possible solutions on Google and figured that I had to do it myself. Now, based on the code of Scott Robin's Backstretch plugin I created a small one-line-of-code jquery plugin that does just this.
+<!-- more -->
+
+I looked around for possible solutions on Google and figured that I had to do
+it myself. Now, based on the code of Scott Robin's Backstretch plugin I
+created a small one-line-of-code jquery plugin that does just this.
 
 You can download the plugin from github [here][github_link_to_plugin].
 

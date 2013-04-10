@@ -11,6 +11,8 @@ environment is within your control. In these cases self signed certificates
 allow you to achieve the same effect as if you were using a signed
 certificate. 
 
+<!-- more -->
+
 ### Generate a self signed (root) certificate
 
 You can use the following script to generate a ssl certificate (I took most of

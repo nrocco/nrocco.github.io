@@ -3,6 +3,10 @@ layout: post
 title: Disable AppArmor
 ---
 
+Sometimes apparmor is installed by default. Follow these steps to disable it.
+
+<!-- more -->
+
 # Disable AppArmor
 
     $ /etc/init.d/apparmor stop

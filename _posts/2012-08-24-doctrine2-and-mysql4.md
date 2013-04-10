@@ -6,6 +6,8 @@ title: Doctrine 2 and MySQL 4.0
 I ran into a problem when connecting to a MySQL database from a Symfony 2.0
 project using Doctrine. 
 
+<!-- more -->
+
 The database I wanted to connect to was an older version: 4.0 and apparently
 it does not support the `SET NAMES` SQL statement.
 

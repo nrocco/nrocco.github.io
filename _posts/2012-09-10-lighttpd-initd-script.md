@@ -3,6 +3,10 @@ layout: post
 title: Lighttpd init.d script
 ---
 
+This is a sysv init script to manage the lighttpd daemon.
+
+<!-- more -->
+
     #!/bin/sh
     ### BEGIN INIT INFO
     # Provides:          lighttpd

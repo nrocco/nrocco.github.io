@@ -3,6 +3,10 @@ layout: post
 title: Setup GIT server
 ---
 
+Host git repositories over ssh for personal use.
+
+<!-- more -->
+
 # Setup Git Server
 
     $ mkdir /srv/git

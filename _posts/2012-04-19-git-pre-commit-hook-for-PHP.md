@@ -8,6 +8,8 @@ always like to commit code that does not contain embarrassing mistakes.  I
 created a simple git pre commit hook that I always install locally on my git
 repositories to warn me before actually commiting if I have any syntax errors.
 
+<!-- more -->
+
     #!/bin/sh
 
     if git rev-parse --verify HEAD >/dev/null 2>&1

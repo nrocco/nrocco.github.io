@@ -3,5 +3,24 @@ layout: default
 title: nrocco.github.io | nrocco
 ---
 
-<h3>Welcome to GitHub Pages.</h3>
-<p>Read my posts <a href="/posts.html">here</a>.</p>
+{% for post in paginator.posts %}
+{% unless post.draft %}
+  <small>{{ post.date | date_to_string }}</small>
+  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  <p>{{ post.content | split:"<!-- more -->" | first }}</p>
+{% endunless %}
+{% endfor %}
+
+<nav id="pagination">
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+    <a href="/" title="Previous Page">&laquo; Previous</a>
+    {% else %}
+    <a href="/page{{ paginator.previous_page }}/" title="Previous Page">&laquo; Previous</a>
+    {% endif %}
+  {% endif %}
+  
+  {% if paginator.next_page %} 
+  <a href="/page{{ paginator.next_page }}/" title="Next Page">Next &raquo;</a>
+  {% endif %} 
+</nav>

@@ -6,7 +6,9 @@ title: A checkinstall howto
 This howto explains how you can compile a package from source and install it
 using your package manager so you can easily uninstall your package later 
 (without leaving too many scattered files around.
+
 <!-- more -->
+
 ## Installing checkinstall
 
     sudo apt-get install checkinstall

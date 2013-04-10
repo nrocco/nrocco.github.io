@@ -3,15 +3,20 @@ layout: post
 title: Setup the iPad for a (Python) development environment
 ---
 
-This post is a guide on how to turn the iPad in to a (mobile) development terminal.
-I will install Python 2.7, vim, git and tmux. You can then use your favorite SSH app from the AppStore to login to the remote shell of your iPad and go nuts.
-I like Prompt.
+This post is a guide on how to turn the iPad in to a (mobile) development
+terminal.  I will install Python 2.7, vim, git and tmux. You can then use your
+favorite SSH app from the AppStore to login to the remote shell of your iPad
+and go nuts.  I like Prompt.
+
+<!-- more -->
 
 ### 0. Before you begin
 
-Every compiled program needs to be signed otherwise this will not run on the ipad.
-You can save the code below in a file and run it by sypplying the path to the `configure` file.
-This will prepend the `ldid` pseudo code sign statements in the correct places. Now the `./configure` command will execute successfully.
+Every compiled program needs to be signed otherwise this will not run on the
+ipad.  You can save the code below in a file and run it by sypplying the path
+to the `configure` file.  This will prepend the `ldid` pseudo code sign
+statements in the correct places. Now the `./configure` command will execute
+successfully.
 
     #!/bin/bash
     # Save this as sign_configure_file.sh
@@ -27,7 +32,8 @@ First you need to have a jailbroken iPad an Cydia installed.
 
 ### 2. Install some essential tools
 
-Before we install gcc so we can compile the tools we need we install some standard applications used in most development environments.
+Before we install gcc so we can compile the tools we need we install some
+standard applications used in most development environments.
 
     apt-get install adv-cmds
 
@@ -61,7 +67,8 @@ Then we can install setuptools and pip:
 
 ### 6. Tmux
 
-The ncurses library should be installed by cydia by default. Make sure the version is 5.x
+The ncurses library should be installed by cydia by default. Make sure the
+version is 5.x
 
 Now install libevent 2.x first
 

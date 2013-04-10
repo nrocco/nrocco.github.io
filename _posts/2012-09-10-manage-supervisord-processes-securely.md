@@ -3,6 +3,10 @@ layout: post
 title: Manage supervisord processes securely
 ---
 
+Allow your regular unix user to manage supervisor processes.
+
+<!-- more -->
+
     $ sudo apt-get install python supervisord
 
     $ groupadd supervisor

@@ -6,6 +6,8 @@ title: Quicksave for later Bookmarklet
 This bookmarklet for Google Bookmarks allows you to ***quickly*** save a
 webpage without opening a popup.  
 
+<!-- more -->
+
 ***This is especially handy when working on the iPad*** where clicking on the
 default Google bookmarklet opens up a new tab where you have to fill in a
 form, hit submit, wait for the tab to auto close and then continue browsing.
