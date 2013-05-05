@@ -1,6 +1,6 @@
-
 help:
-	@echo Usage: make [server]
-
+	@echo Usage: make [html|server]
+html:
+	jekyll
 server:
-	jekyll --pygments --no-lsi --safe --server
+	jekyll --auto --server
