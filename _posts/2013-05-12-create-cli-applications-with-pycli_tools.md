@@ -33,4 +33,4 @@ github page and [read the README.md][github_page] file overthere.
 
 
 [github_page]: https://github.com/nrocco/pycli-tools
-[pypi_page]: https://pypi.python.org/pypi/pycli_tools/1.2
+[pypi_page]: https://pypi.python.org/pypi/pycli_tools
