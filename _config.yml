@@ -1,7 +1,46 @@
-safe:        true
-lsi:         false
-server_port: 8000
-pygments:    true
-permalink:   date
-paginate:    10
-exclude:     README.md params.json Makefile
+safe:             true
+lsi:              false
+server_port:      8000
+pygments:         true
+permalink:        date
+paginate:         10
+
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec"]
+include: [".htaccess"]
+
+timezone:    Europe/Amsterdam
+future:      true
+
+title:            nrocco.github.io
+description:      "a blog on #dev"
+disqus_shortname: coccorocco
+
+#Comment out url when working locally to resolve base urls correctly
+#url:              http://nrocco.github.io
+
+# Owner/author information
+owner:
+  name:           Nico Di Rocco
+  email:          dirocco.nico@gmail.com
+  twitter:        nrocco
+  github:         nrocco
+  linkedin:       nrocco
+  flickr:         nrocco
+  google_plus:
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+  - title: Articles
+    url: /articles
+  - title: github
+    url: http://github.com/nrocco
+    external: true
