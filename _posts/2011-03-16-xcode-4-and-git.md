@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Xcode 4 and git
+comments: true
 ---
 
 I downloaded and installed the new Xcode yesterday to work out some ideas I

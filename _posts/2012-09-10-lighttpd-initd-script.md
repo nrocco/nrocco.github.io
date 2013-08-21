@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Lighttpd init.d script
+comments: true
 ---
 
 This is a sysv init script to manage the lighttpd daemon.

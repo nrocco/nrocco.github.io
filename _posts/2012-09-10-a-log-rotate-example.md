@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A logrotate example
+comments: true
 ---
 
 This is a very simple sample logrote file.

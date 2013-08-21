@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Using Wordpress as a CMS works like a charm
+comments: true
 ---
 
 This week i worked on a site development project for one of our clients.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Send mail from the command line
+comments: true
 draft: yes
 ---
 

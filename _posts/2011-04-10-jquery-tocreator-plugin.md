@@ -1,6 +1,7 @@
 ---
 layout: post
 title: JQuery Tocreator Plugin
+comments: true
 ---
 
 **Minified version less then 1 kb!**

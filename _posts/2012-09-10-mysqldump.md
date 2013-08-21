@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Create reusable MySQL dump
+comments: true
 draft: yes
 ---
 

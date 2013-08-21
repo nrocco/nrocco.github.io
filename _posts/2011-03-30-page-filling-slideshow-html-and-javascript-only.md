@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A page filling slideshow html and javascript only
+comments: true
 ---
 
 A while ago I started working on a idea to create a html only website with

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Importing Cinema4D model into Papervision3D 2.0
+comments: true
 ---
 
 I would like to show you how you can use a custom polygon shape, made with

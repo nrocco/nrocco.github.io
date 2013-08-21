@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Diving into iPhone Development
+comments: true
 ---
 
 As a developer with some good and a lot of bad ideas piling up at the

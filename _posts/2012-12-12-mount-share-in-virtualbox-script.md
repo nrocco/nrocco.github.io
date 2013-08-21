@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A script to mount a share inside VirtualBox
+comments: true
 ---
 
 This is a simple script to ease the process of mounting and unmounting

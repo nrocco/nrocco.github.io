@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Manage supervisord processes securely
+comments: true
 ---
 
 Allow your regular unix user to manage supervisor processes.

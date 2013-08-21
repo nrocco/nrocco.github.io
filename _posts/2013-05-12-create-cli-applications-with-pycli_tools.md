@@ -2,6 +2,7 @@
 layout: post
 title: Create cli applications with pycli_tools
 tags: python
+comments: true
 ---
 
 > A python module to help create predictable command line tools

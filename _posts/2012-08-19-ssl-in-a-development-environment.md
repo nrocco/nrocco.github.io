@@ -1,6 +1,7 @@
 ---
 layout: post
 title: SSL in a development environment
+comments: true
 ---
 
 Using ssl certificates can be a tedious task. Especially in a development or

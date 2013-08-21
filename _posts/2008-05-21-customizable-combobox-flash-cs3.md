@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Customizable ComboBox (Flash CS3)
+comments: true
 ---
 
 Here is an example of how to customize the font (size, style, color) for the

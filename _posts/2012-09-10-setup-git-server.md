@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Setup GIT server
+comments: true
 ---
 
 Host git repositories over ssh for personal use.

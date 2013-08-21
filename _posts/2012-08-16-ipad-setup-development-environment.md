@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Setup the iPad for a (Python) development environment
+comments: true
 ---
 
 This post is a guide on how to turn the iPad in to a (mobile) development

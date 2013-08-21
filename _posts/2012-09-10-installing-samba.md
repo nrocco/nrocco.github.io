@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Installing and configuring Samba
+comments: true
 ---
 
 A tutorial on how to install samba to expose a share to clients.

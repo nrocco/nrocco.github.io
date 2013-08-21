@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Event Meta Tag in AS3 and Flex Builder
+comments: true
 ---
 
 Recently I found out about the `[Event]` meta tag in actionscript 3.  I always

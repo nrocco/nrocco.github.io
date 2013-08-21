@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Setup Postfix for development
+comments: true
 ---
 
 The following tutorial shows how to setup a local postfix installation on a

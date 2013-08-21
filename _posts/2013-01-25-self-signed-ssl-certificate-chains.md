@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Self Signed SSL Certificate Chains
+comments: true
 ---
 
 In a previous [post][ssl_dev_env] I talked about using SSL in a development

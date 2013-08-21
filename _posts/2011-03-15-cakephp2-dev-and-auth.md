@@ -1,6 +1,7 @@
 ---
 layout: post
 title: CakePHP 2.0.0-dev and Auth
+comments: true
 ---
 
 Learn how to set up a authentication system in CakePHP 2.0.0-dev.  We are

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: CakePHP on your $PATH
+comments: true
 ---
 
 I love baking a new project with the cake bake application from the terminal,

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Disable AppArmor
+comments: true
 ---
 
 Sometimes apparmor is installed by default. Follow these steps to disable it.

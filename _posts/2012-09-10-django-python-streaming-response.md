@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Django Python Streaming Resposne
+comments: true
 draft: yes
 ---
 

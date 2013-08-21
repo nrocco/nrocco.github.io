@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Let Flash use WordPress content
+comments: true
 ---
 
 Last week I set up a fresh WordPress system for a client to function as a

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Actionscript 3 Datastructures
+comments: true
 ---
 
 This morning I came across a [interesting AS3 implementation][dpkd] of the

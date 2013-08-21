@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Boot and bypass root for vm
+comments: true
 ---
 
 A usefull tip to reset a root password for a virtual machine in case you've

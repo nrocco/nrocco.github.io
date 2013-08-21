@@ -1,6 +1,7 @@
 ---
 layout: post
 title: PHP Lint syntax checker as a vim plugin
+comments: true
 ---
 
 Title:          PHP Lint syntax checker as a vim plugin

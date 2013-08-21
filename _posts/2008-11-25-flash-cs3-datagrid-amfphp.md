@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Flash CS3 Datagrid with AMFPHP
+comments: true
 ---
 
 [Wade Arnold wrote an interesting article][wade_arnold] about connecting flash

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: SSH Socks Proxy Tunnel
+comments: true
 ---
 
 Create a ssh SOCKS proxy tunnel.

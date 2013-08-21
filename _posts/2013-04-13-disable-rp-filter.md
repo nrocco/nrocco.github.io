@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Disable rp_filter on unix
+comments: true
 ---
 
 Sometimes in a more complicated network setups you want to disable

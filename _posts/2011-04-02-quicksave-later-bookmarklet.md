@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Quicksave for later Bookmarklet
+comments: true
 ---
 
 This bookmarklet for Google Bookmarks allows you to ***quickly*** save a

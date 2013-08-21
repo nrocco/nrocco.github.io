@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Some usefull git-svn commands
+comments: true
 ---
 
 Here are some useful git-svn commands that I found really usefull when working

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A checkinstall howto
+comments: true
 ---
 
 This howto explains how you can compile a package from source and install it

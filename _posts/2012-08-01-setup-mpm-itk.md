@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Setup apache-mpm-itk for Symfony 2 development
+comments: true
 ---
 
 When developing on Symfony 2 applications you must have noticed that using the

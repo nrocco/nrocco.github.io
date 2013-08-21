@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Git pre-commit hook for PHP projects
+comments: true
 ---
 
 When working on PHP projects -- well on any project for that matter -- I

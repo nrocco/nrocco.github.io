@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Doctrine 2 and MySQL 4.0
+comments: true
 ---
 
 I ran into a problem when connecting to a MySQL database from a Symfony 2.0
