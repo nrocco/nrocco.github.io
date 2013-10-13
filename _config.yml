@@ -13,7 +13,7 @@ future:      true
 
 title:            nrocco.github.io
 description:      "a blog on #dev"
-disqus_shortname: coccorocco
+disqus_shortname: casadirocco
 
 #Comment out url when working locally to resolve base urls correctly
 url:              http://nrocco.github.io
