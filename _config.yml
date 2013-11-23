@@ -1,6 +1,7 @@
 safe:             true
 lsi:              false
-server_port:      8000
+port:             8000
+search:           true
 pygments:         true
 permalink:        date
 paginate:         10
