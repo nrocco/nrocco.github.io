@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Create cli applications with pycli_tools
-tags: python
+tags: [python]
 comments: true
 ---
 
