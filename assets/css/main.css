@@ -3189,8 +3189,8 @@ span + .entry-title {
   margin: 2em auto;
   text-align: center;
   font-family: 'volkhov', serif;
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 10px;
+  font-size: 0.625rem;
   font-style: italic;
   color: #555555;
 }
