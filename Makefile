@@ -10,6 +10,12 @@ html:
 server:
 	jekyll serve --watch --drafts --baseurl ''
 
+assets/css/main.css: assets/less/*.less
+	lessc assets/less/main.less assets/css/main.css
+
+assets/css/main.min.css: assets/css/main.css
+	cleancss -o $@ $<
+
 clean:
 	rm -rf _site/*
 
