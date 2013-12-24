@@ -1,13 +1,19 @@
-Title:      Django Uwsgi Debian init.d script
-Slug:       django-uwsgi-debian-initd-script
-Date:       2012-09-10 14:30
-Tags:           python, django, init.d, upstart, server, http, uwsgi
-Status:     draft
+---
+layout:     post
+title:      Django Uwsgi init.d script
+comments:   true
+---
 
-I started using [Supervisord](http://supervisord.org/) for managing my django application servers. But on a low budget VPS where RAM is scarce I decided to look for alternatives. Inspired by the minimal philosophy of [Arch](https://wiki.archlinux.org/index.php/The_Arch_Way) I went for the [Init Scripts](http://refspecs.linuxbase.org/LSB_3.1.1/LSB-Core-generic/LSB-Core-generic/iniscrptact.html "Linux Standard Base Core Specification").
+I started using [Supervisord][supervisord] for managing my django application
+servers. But on a low budget VPS where RAM is scarce I decided to look for
+alternatives. Inspired by the minimal philosophy of [Arch][the_arch_way] I
+went for the [Init Scripts][init_scripts].
 
-Suppose I have a django project called cookbook in `/srv/www/cookbook`, I create the following init.d start up script.
+<!-- more -->
 
+Suppose I have a django project called cookbook in `/srv/www/cookbook`.
+
+I create the following init.d start up script:
 
     #!/bin/sh
     ### BEGIN INIT INFO
@@ -115,7 +121,11 @@ Suppose I have a django project called cookbook in `/srv/www/cookbook`, I create
 
     exit 0
 
-I can now use `sudo service cookbook status` to see if my application is running or not. `sudo service cookbook start` to start it and `sudo service cookbook stop` to stop it. The uwsgi daemon starts with the following options defined in an external .ini file from /etc/uwsgi/cookbook.ini:
+
+I can now use `sudo service cookbook status` to see if my application is
+running or not. `sudo service cookbook start` to start it and `sudo service
+cookbook stop` to stop it. The uwsgi daemon starts with the following options
+defined in an external `.ini` file from `/etc/uwsgi/cookbook.ini`:
 
     [uwsgi]
 
@@ -134,4 +144,14 @@ I can now use `sudo service cookbook status` to see if my application is running
     processes = 1
     max-requests = 3
 
-Assuming that the http server (such as [nginx](http://nginx.org/)) runs as the same `www-data` user the socket permissions can be 700. If you run the http server and the uwsgi server as two different users you should use different chmod for the socket to avoid permission problems.
+
+Assuming that the http server (such as [nginx][nginx]) runs as the
+same `www-data` user the socket permissions can be 700. If you run the http
+server and the uwsgi server as two different users you should use different
+chmod for the socket to avoid permission problems.
+
+
+[supervisord]: http://supervisord.org/
+[the_arch_way]: https://wiki.archlinux.org/index.php/The_Arch_Way
+[init_scripts]: http://refspecs.linuxbase.org/LSB_3.1.1/LSB-Core-generic/LSB-Core-generic/iniscrptact.html "Linux Standard Base Core Specification"
+[nginx]: http://nginx.org/
