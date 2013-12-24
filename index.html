@@ -7,10 +7,10 @@ tags: [Jekyll, theme, themes, responsive, blog, minimalism]
 
 <ul class="post-list">
 {% for post in site.posts limit:10 %} 
-  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></a></article></li>
+  <li><article><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></a></article></li>
 {% endfor %}
 </ul>
 
 <nav class="pagination" role="navigation" style="margin-top: 30px;">
-    <a href="{{ site.url }}/articles" class="btn" title="See all articles">See all articles</a>
+    <a href="{{ site.baseurl }}/articles" class="btn" title="See all articles">See all articles</a>
 </nav>
