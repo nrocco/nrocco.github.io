@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A collection of Django 1.5+ and Django Rest Framework 3.0+ utilities
+title: Django 1.5+ and Django Rest Framework 3.0+ goodies
 tags: [python, django, django-rest-framework]
 comments: true
 ---
@@ -21,7 +21,6 @@ Then add it to the list of installed apps:
     INSTALLED_APPS = (
         'djenerics'
     )
-
 
 <!-- more -->
 
